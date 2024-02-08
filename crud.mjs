@@ -110,6 +110,11 @@ function addData() {
     cell3.innerHTML = id;
     cell4.innerHTML = '<button onclick="editData(this)">Edit</button> <button onclick="deleteData(this)">Delete</button>';
 }
+function clearForm() {
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("id").value = "";
+}
 
 function editData(button) {
     var row = button.parentNode.parentNode;
